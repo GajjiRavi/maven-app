@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Flipkart Clone</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,39 +11,74 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
         header {
-            background: #333;
+            background-color: #2874f0;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
-        nav {
-            margin: 15px 0;
-            text-align: center;
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
-        nav a {
+        .navbar a {
             color: #fff;
-            padding: 10px 15px;
+            padding: 14px 20px;
             text-decoration: none;
-            background: #444;
-            border-radius: 5px;
+            text-align: center;
+            display: block;
         }
-        nav a:hover {
-            background: #555;
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
         }
         .main-content {
-            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
             background: #fff;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            flex: 1 1 21%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #888;
+        }
+        .product button {
+            background-color: #2874f0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product button:hover {
+            background-color: #0056b3;
         }
         footer {
-            background: #333;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -51,62 +86,49 @@
             bottom: 0;
             width: 100%;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        form {
-            margin-top: 20px;
-        }
-        form input, form textarea {
-            padding: 10px;
-            margin: 5px 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        form button {
-            padding: 10px 20px;
-            border: none;
-            background: #333;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background: #555;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Webpage</h1>
+        <h1>Flipkart Clone</h1>
     </header>
-    <nav>
+    <div class="navbar">
         <a href="#home">Home</a>
+        <a href="#electronics">Electronics</a>
+        <a href="#clothing">Clothing</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-    </nav>
+    </div>
     <div class="container">
         <div class="main-content">
-            <h2>About Me</h2>
-            <p>Hello! My name is John Doe, and this is my personal webpage. I enjoy web development and exploring new technologies.</p>
-            <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
-            <h2>Contact Form</h2>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$199.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$299.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$399.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$499.99</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
+        <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
     </footer>
 </body>
 </html>
